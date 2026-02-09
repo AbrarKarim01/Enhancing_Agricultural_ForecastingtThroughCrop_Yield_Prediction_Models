@@ -64,9 +64,7 @@ Dimensionality reduction comparison (Random Forest):
 ## Project Structure
 - Project Code/Enhancing_Agricultural_Forecasting_through_Crop_Yield_Prediction_Models.ipynb
 - Dataset/ (place `yield_df.csv` here or adjust the notebook path)
-- Project Paper/
-- Project Presentation/
-- Project Proposal/
+
 
 ## How to Run
 1. Ensure `yield_df.csv` is available (update the notebook path if needed).
@@ -88,4 +86,4 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost
 
 ## Notes
 - The notebook drops `Year` before training and uses one-hot encoded country and crop features.
-- Update any file paths if your dataset is stored elsewhere.
+- Update any file paths if the dataset is stored elsewhere.
