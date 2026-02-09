@@ -43,7 +43,23 @@ The notebook loads a local CSV named `yield_df.csv`.
    - Prediction vs actual scatter plot
 
 ## Results
-Add your final metrics, plots, and observations here.
+Model performance on the test split:
+
+| Model | R2 | MAE | MSE | RMSE |
+| --- | --- | --- | --- | --- |
+| Decision Tree | 0.9584 | 6047.40 | 302046195.80 | 17379.48 |
+| Random Forest | 0.9734 | 5553.74 | 193267849.39 | 13902.08 |
+| XGBoost | 0.9514 | 11726.99 | 352549664.00 | 18776.31 |
+| Linear Regression | 0.7493 | 29811.75 | 1818523144.97 | 42644.15 |
+
+Random Forest cross-validation (5-fold):
+- Fold R2: 0.9749, 0.9719, 0.9743, 0.9767, 0.9701
+- Average R2: 0.9736
+
+Dimensionality reduction comparison (Random Forest):
+- Original features R2: 0.9734
+- PCA (2 components) R2: 0.7070
+- t-SNE (2 components) R2: 0.9447
 
 ## Project Structure
 - Project Code/Enhancing_Agricultural_Forecasting_through_Crop_Yield_Prediction_Models.ipynb
